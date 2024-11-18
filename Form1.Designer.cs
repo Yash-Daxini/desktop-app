@@ -1,4 +1,5 @@
-﻿namespace desktopapp
+﻿
+namespace desktopapp
 {
     partial class Form1
     {
@@ -48,6 +49,9 @@
             label8 = new Label();
             textBox9 = new TextBox();
             label9 = new Label();
+            textBox10 = new TextBox();
+            label10 = new Label();
+            label11 = new Label();
             SuspendLayout();
             // 
             // titlelabel1
@@ -65,7 +69,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(26, 101);
+            label1.Location = new Point(24, 101);
             label1.Name = "label1";
             label1.Size = new Size(108, 21);
             label1.TabIndex = 1;
@@ -83,7 +87,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(167, 152);
+            textBox2.Location = new Point(167, 158);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(425, 33);
             textBox2.TabIndex = 4;
@@ -92,7 +96,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(26, 158);
+            label2.Location = new Point(24, 164);
             label2.Name = "label2";
             label2.Size = new Size(45, 21);
             label2.TabIndex = 3;
@@ -102,7 +106,7 @@
             // textBox3
             // 
             textBox3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(167, 207);
+            textBox3.Location = new Point(167, 213);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(425, 43);
@@ -112,7 +116,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(28, 213);
+            label3.Location = new Point(26, 219);
             label3.Name = "label3";
             label3.Size = new Size(43, 21);
             label3.TabIndex = 5;
@@ -133,7 +137,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(28, 280);
+            label4.Location = new Point(26, 290);
             label4.Name = "label4";
             label4.Size = new Size(69, 21);
             label4.TabIndex = 7;
@@ -144,7 +148,7 @@
             // 
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.FromArgb(0, 192, 0);
-            button1.Location = new Point(474, 592);
+            button1.Location = new Point(474, 715);
             button1.Name = "button1";
             button1.Size = new Size(118, 44);
             button1.TabIndex = 9;
@@ -156,7 +160,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(26, 496);
+            label5.Location = new Point(28, 502);
             label5.Name = "label5";
             label5.Size = new Size(45, 21);
             label5.TabIndex = 10;
@@ -165,7 +169,7 @@
             // textBox5
             // 
             textBox5.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.Location = new Point(167, 490);
+            textBox5.Location = new Point(167, 496);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(425, 33);
             textBox5.TabIndex = 11;
@@ -173,7 +177,7 @@
             // textBox6
             // 
             textBox6.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox6.Location = new Point(167, 439);
+            textBox6.Location = new Point(167, 445);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(425, 33);
             textBox6.TabIndex = 13;
@@ -182,7 +186,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(26, 445);
+            label6.Location = new Point(26, 451);
             label6.Name = "label6";
             label6.Size = new Size(118, 21);
             label6.TabIndex = 12;
@@ -193,11 +197,11 @@
             // textBox7
             // 
             textBox7.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox7.Location = new Point(167, 542);
+            textBox7.Location = new Point(167, 548);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(425, 33);
             textBox7.TabIndex = 15;
-            textBox7.TextChanged += textBox7_TextChanged;
+            textBox7.TextChanged += TextBox7_TextChanged;
             // 
             // label7
             // 
@@ -209,12 +213,12 @@
             label7.TabIndex = 14;
             label7.Text = "સભ્ય સાથેનો સબંધ ";
             label7.TextAlign = ContentAlignment.TopRight;
-            label7.Click += this.label7_Click;
+            label7.Click += label7_Click;
             // 
             // textBox8
             // 
             textBox8.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox8.Location = new Point(167, 386);
+            textBox8.Location = new Point(167, 392);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(425, 33);
             textBox8.TabIndex = 17;
@@ -223,7 +227,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(26, 392);
+            label8.Location = new Point(26, 398);
             label8.Name = "label8";
             label8.Size = new Size(89, 21);
             label8.TabIndex = 16;
@@ -247,11 +251,45 @@
             label9.TabIndex = 18;
             label9.Text = "મોબાઈલ નં . ";
             // 
+            // textBox10
+            // 
+            textBox10.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox10.Location = new Point(167, 608);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(425, 33);
+            textBox10.TabIndex = 21;
+            textBox10.TextChanged += textBox10_TextChanged;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Location = new Point(26, 614);
+            label10.Name = "label10";
+            label10.Size = new Size(0, 21);
+            label10.TabIndex = 20;
+            label10.TextAlign = ContentAlignment.TopRight;
+            label10.Click += this.label10_Click;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label11.Location = new Point(24, 608);
+            label11.Name = "label11";
+            label11.Size = new Size(120, 21);
+            label11.TabIndex = 22;
+            label11.Text = "શરૂઆતની રકમ ";
+            label11.TextAlign = ContentAlignment.TopRight;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 657);
+            ClientSize = new Size(800, 788);
+            Controls.Add(label11);
+            Controls.Add(textBox10);
+            Controls.Add(label10);
             Controls.Add(textBox9);
             Controls.Add(label9);
             Controls.Add(textBox8);
@@ -280,6 +318,11 @@
             PerformLayout();
         }
 
+        private void label7_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private Label titlelabel1;
@@ -302,5 +345,8 @@
         private Label label8;
         private TextBox textBox9;
         private Label label9;
+        private TextBox textBox10;
+        private Label label10;
+        private Label label11;
     }
 }
